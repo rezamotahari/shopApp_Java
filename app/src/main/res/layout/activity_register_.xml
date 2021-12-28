@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Activity.Register_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile_register"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/txt_profile_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="افزودن عکس پروفایل"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edt_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:hint=" ایمیل :"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+
+
+            android:id="@+id/edt_pass_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:hint=" رمز عبور :"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/ch_pass_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:text="نمایش رمز عبور" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_register_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="عضویت در فروشگاه"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
+

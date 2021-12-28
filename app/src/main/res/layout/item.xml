@@ -1,0 +1,95 @@
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    app:cardCornerRadius="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_item"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/shopicon"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:text="گوشی ایفون 10"
+            android:id="@+id/txt_name_item"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="10"
+                    android:id="@+id/txt_view_item"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/visibility"/>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
+                <TextView
+                    android:textColor="@color/red"
+                    android:id="@+id/txt_freeprice_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|right"
+
+                    android:textSize="15sp"
+                    android:text="666666 تومان"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
+                <TextView
+                    android:textColor="@color/green"
+                    android:id="@+id/txt_price_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|right"
+
+                    android:textSize="15sp"
+                    android:text="666666 تومان"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shopapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Class.GG"
+        android:allowBackup="true"
+        android:icon="@drawable/shopicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShopApp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.Activity_AllProduct"></activity>
+        <activity android:name=".Activity.Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Activity_ForgetPassword" />
+        <activity android:name=".Activity.About_Activity" />
+        <activity android:name=".Activity.Activity_Order" />
+        <activity android:name=".Activity.Activity_Banner" />
+        <activity android:name=".Activity.Fav_Activity" />
+        <activity android:name=".Activity.Activity_FinalBuy" />
+        <activity android:name=".Activity.WebGet_Activity" />
+        <activity android:name=".Activity.Activity_Search" />
+        <activity android:name=".Activity.Item_Activity" />
+        <activity android:name=".Activity.Itemcategory_Activity" />
+        <activity android:name=".Activity.Properties_Activity" />
+        <activity android:name=".Activity.Sendcomment_Activity" />
+        <activity android:name=".Activity.Showcomment_Activity" />
+        <activity android:name=".Activity.Basket_Activity" />
+        <activity android:name=".Activity.Wait_Activity" />
+        <activity android:name=".Activity.Show_Activity" />
+        <activity android:name=".Activity.Category_Activity" />
+        <activity android:name=".Activity.EditProfile_Acvivity" />
+        <activity android:name=".Activity.Profile_Activity" />
+        <activity android:name=".Activity.Register_Activity" />
+        <activity android:name=".Activity.Login_Activity" />
+        <activity android:name=".Activity.HomeActivity"></activity>
+    </application>
+
+</manifest>

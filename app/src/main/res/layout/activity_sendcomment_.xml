@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".Activity.Sendcomment_Activity">
+
+    <include layout="@layout/toolbar2" />
+
+    <EditText
+        android:id="@+id/edt_com_sendcom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="#e2e2e2"
+        android:hint="ثبت دیدگاه"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_pos_sendcom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="#e2e2e2"
+            android:hint="نقاط قوت"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_horizontal|center"
+            android:text="نقاط قوت"
+            android:textColor="@color/green" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_nag_com"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="#e2e2e2"
+            android:hint="نقاط ضغف"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_horizontal|center"
+            android:text="نقاط ضعف"
+            android:textColor="@color/red" />
+
+
+    </LinearLayout>
+
+    <com.willy.ratingbar.ScaleRatingBar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rat_ratcom_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        app:srb_clickable="true"
+        app:srb_drawableEmpty="@drawable/empty"
+        app:srb_drawableFilled="@drawable/filled"
+        app:srb_isIndicator="false"
+        app:srb_minimumStars="1"
+        app:srb_numStars="5"
+        app:srb_rating="5"
+        app:srb_scrollable="true"
+        app:srb_starHeight="30dp"
+        app:srb_starPadding="5dp"
+        app:srb_starWidth="30dp"
+        app:srb_stepSize="0.5"
+        tools:ignore="MissingClass"></com.willy.ratingbar.ScaleRatingBar>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sendcom_com"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_shape"
+        android:text="ثبت نظر"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

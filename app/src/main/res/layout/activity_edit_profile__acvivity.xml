@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".Activity.EditProfile_Acvivity">
+
+    <include layout="@layout/toolbar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_user_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:hint="نام کاربری" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_number_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:hint="شماره تماس" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_address_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:hint="ادرس" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:text="ارسال اطلاعات"
+            android:textColor="@color/white"
+            android:id="@+id/btn_send_edit"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_editprof"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

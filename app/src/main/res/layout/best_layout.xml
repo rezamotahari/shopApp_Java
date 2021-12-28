@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_best"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="170dp"
+    android:layout_height="240dp"
+    android:layout_margin="4dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgbest"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/shopicon"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:text="گوشی ایفون 10"
+            android:id="@+id/txtnamebest"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="10"
+                    android:id="@+id/viewbest"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/visibility"/>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:id="@+id/pricebest"
+                    android:textSize="11sp"
+                    android:text="666666 تومان"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
